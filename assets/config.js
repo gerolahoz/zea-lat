@@ -1,7 +1,7 @@
 // Todo lo editable del sitio está acá.
 window.ZEA = {
   whatsapp: "5493777272762",   // con código de país (54 + 9 + área + número), sin + ni espacios
-  whatsappMsg: "Hola Gero! Vengo de la web de ZEA y quiero info de la mentoría",
+  whatsappMsg: "Hola Gero! Vengo de YouTube y quiero info de la mentoría",
   instagram: "gerolahoz",
   youtube: "",             // TODO: link del canal (vacío = se oculta)
 

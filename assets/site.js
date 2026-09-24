@@ -23,7 +23,7 @@
   // Contacto: si falta el dato, el botón no se muestra
   if (Z.whatsapp){
     document.querySelectorAll("[data-wa]").forEach(function(a){
-      a.href = "https://wa.me/" + Z.whatsapp + "?text=" + encodeURIComponent(a.getAttribute("data-wa") || Z.whatsappMsg); ext(a);
+      a.href = "https://api.whatsapp.com/send/?phone=" + Z.whatsapp + "&text=" + encodeURIComponent(Z.whatsappMsg).replace(/%20/g, "+") + "&type=phone_number&app_absent=0"; ext(a);
     });
   } else hide("[data-wa]");
   if (Z.instagram) document.querySelectorAll("[data-ig]").forEach(function(a){ a.href = "https://instagram.com/" + Z.instagram; ext(a); });
