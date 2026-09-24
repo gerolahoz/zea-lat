@@ -2,7 +2,7 @@
   var Z = window.ZEA;
   function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
   function ext(a){ a.target = "_blank"; a.rel = "noopener"; }
-  function hide(sel){ document.querySelectorAll(sel).forEach(function(e){ (e.closest("[data-wrap]") || e).style.display = "none"; }); }
+  function hide(sel){ document.querySelectorAll(sel).forEach(function(e){ if (e.hasAttribute("data-keep")) return; (e.closest("[data-wrap]") || e).style.display = "none"; }); }
 
   // Kit: la página declara <body data-kit="slug">
   var slug = document.body.getAttribute("data-kit");
