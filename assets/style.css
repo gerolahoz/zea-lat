@@ -254,3 +254,8 @@ footer a:hover{color:var(--ink)}
 .incl-list li:before{content:"";position:absolute;left:0;top:16px;width:18px;height:18px;border-radius:50%;background:var(--acc2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='4'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/11px no-repeat}
 .plan .price{font-size:52px}
 @media(max-width:760px){.incl-hi{grid-template-columns:1fr}.incl-hi div+div{border-left:0;border-top:1px solid var(--line)}.incl-list{columns:1}.incl-hi b{font-size:58px}}
+
+.about.solo{grid-template-columns:1fr;max-width:760px;text-align:center}
+.about.solo .stats{justify-content:center}
+.proof{padding:10px 18px}
+.hero .cta{margin-top:8px}

@@ -1,9 +1,9 @@
 // Todo lo editable del sitio está acá.
 window.ZEA = {
-  whatsapp: "",            // TODO: número con código de país, sin + ni espacios (ej. 5493777000000). Vacío = se ocultan los botones
+  whatsapp: "5493777272762",   // con código de país (54 + 9 + área + número), sin + ni espacios
   whatsappMsg: "Hola Gero! Vengo de la web de ZEA y quiero info de la mentoría",
-  instagram: "",           // TODO: usuario sin @. Vacío = se ocultan los botones
-  youtube: "",             // TODO: link del canal
+  instagram: "gerolahoz",
+  youtube: "",             // TODO: link del canal (vacío = se oculta)
 
   // Un kit por video. Cada uno tiene su página: zea.lat/<slug> (ej. zea.lat/anuncios)
   kits: {
