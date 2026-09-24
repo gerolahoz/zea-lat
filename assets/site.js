@@ -10,16 +10,14 @@
   if (k){
     document.getElementById("k-titulo").textContent = k.titulo;
     document.getElementById("k-resumen").textContent = k.resumen;
-    document.getElementById("k-video").textContent = "Del video: " + k.video;
+    document.getElementById("k-video").textContent = "Tocá la vista previa para abrir el PDF · Kit del video: " + k.video;
     document.getElementById("k-pdf").href = k.pdf;
     document.getElementById("k-zip").href = k.zip;
     document.getElementById("k-inc").innerHTML = k.incluye.map(function(i, n){
       return '<div class="inc"><span class="n">0' + (n+1) + '</span><div><h3>' + esc(i[0]) + '</h3><p>' + esc(i[1]) + '</p></div></div>';
     }).join("");
-    var pl = document.getElementById("k-player");
-    pl.innerHTML = k.youtubeId
-      ? '<iframe src="https://www.youtube-nocookie.com/embed/' + esc(k.youtubeId) + '?rel=0" title="' + esc(k.video) + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-      : '<img src="' + esc(k.thumb) + '" alt="' + esc(k.video) + '">';
+    document.getElementById("k-player").innerHTML =
+      '<a href="' + esc(k.pdf) + '" target="_blank" rel="noopener"><img src="' + esc(k.preview) + '" alt="Vista previa del PDF: ' + esc(k.titulo) + '"></a>';
   }
 
   // Contacto: si falta el dato, el botón no se muestra

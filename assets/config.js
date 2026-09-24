@@ -5,16 +5,14 @@ window.ZEA = {
   instagram: "",           // TODO: usuario sin @. Vacío = se ocultan los botones
   youtube: "",             // TODO: link del canal
 
-  // Un kit por video. Cada uno tiene su página: zea.lat/<slug>
-  // youtubeId = lo que va después de "watch?v=" (vacío = muestra la miniatura)
+  // Un kit por video. Cada uno tiene su página: zea.lat/<slug> (ej. zea.lat/anuncios)
   kits: {
-    "kit-anuncios-ia": {
-      youtubeId: "",
+    "anuncios": {
       fecha: "2026-09-24",
       titulo: "La fábrica de anuncios con IA",
-      video: "Hice +$4.917 USD en UN DÍA con anuncios hechos por CLAUDE (sin grabar nada)",
+      video: "hice +$4.917 USD en un día con anuncios hechos por Claude",
       resumen: "El sistema que muestro en el video: le pasás a Claude un link de la Biblioteca de Anuncios y te devuelve réplicas, UGC con avatar y B-rolls con IA, con voz, subtítulos y música, listos para subir.",
-      thumb: "assets/video-2.jpg",
+      preview: "assets/kit2-preview.png",
       pdf: "files/kit-video-2.pdf",
       zip: "files/kit-video-2-skills.zip",
       incluye: [
@@ -24,13 +22,12 @@ window.ZEA = {
         ["Tutorial de configuración", "Paso a paso de 1 hora, con el prompt de configuración y el de tu primera tanda."]
       ]
     },
-    "kit-ofertas-ganadoras": {
-      youtubeId: "",
+    "ofertas": {
       fecha: "2026-09-23",
       titulo: "Encontrar, modelar y lanzar ofertas ganadoras",
-      video: "De 0 a $3.500 por día vendiendo productos digitales con Claude",
+      video: "el proceso para facturar USD 3.500 por día con productos digitales",
       resumen: "El sistema que muestro en el video: una rutina que cada mañana te trae 15 ofertas que ya venden, la skill para llevarlas a otro mercado y cómo las lanzo y escalo en Meta Ads.",
-      thumb: "assets/video-1.jpg",
+      preview: "assets/kit1-preview.png",
       pdf: "files/kit-video-1.pdf",
       zip: "files/kit-video-1-skills.zip",
       incluye: [
