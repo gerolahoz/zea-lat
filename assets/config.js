@@ -7,6 +7,21 @@ window.ZEA = {
 
   // Un kit por video. Cada uno tiene su página: zea.lat/<slug> (ej. zea.lat/anuncios)
   kits: {
+    "cazar": {
+      fecha: "2026-09-25",
+      titulo: "Cómo encuentro productos ganadores",
+      video: "así encuentro productos ganadores (Claude los busca por mí)",
+      resumen: "Todo lo del video: los criterios para saber si una oferta vale la pena, la skill /cazar que busca ofertas ganadoras en la Biblioteca de Anuncios y la rutina que lo hace sola todas las mañanas a las 8:00.",
+      preview: "assets/kit3-preview.png",
+      pdf: "files/kit-video-3.pdf",
+      zip: "files/kit-video-3-skills.zip",
+      incluye: [
+        ["Hoja de criterios", "Qué tiene que cumplir, qué descartar, el puntaje de 0 a 4 y a qué país llevarla."],
+        ["Skill /cazar", "Busca en 9 países, filtra con todos mis criterios y ordena por prioridad."],
+        ["Rutina diaria 8:00", "El prompt que corre solo todas las mañanas y te deja 15 ofertas."],
+        ["Prompts de feedback", "Cómo entrenarla con Sí / No y cómo pasarle ofertas que encontrás vos."]
+      ]
+    },
     "anuncios": {
       fecha: "2026-09-24",
       titulo: "La fábrica de anuncios con IA",
